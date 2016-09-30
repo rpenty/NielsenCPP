@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
@@ -43,3 +44,7 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+# NielsenCPP
+Nieslen Connected Partners Program
+>>>>>>> 33127d989add7b720c9c4f8fd42d60a919b31199
