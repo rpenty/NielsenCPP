@@ -7,6 +7,17 @@
  * @package nielsen-cpp
  */
 
+$homepage_banner_title = get_field('homepage_banner_title');
+$homepage_banner_subtitle = get_field('homepage_banner_subtitle');
+$homepage_banner_text = get_field('homepage_banner_text');
+$homepage_banner_cta = get_field('homepage_banner_cta');
+$homepage_featured_partners_title = get_field('homepage_featured_partners_title');
+$homepage_featured_partners_text = get_field('homepage_featured_partners_text');
+$homepage_featured_partners_cta = get_field('homepage_featured_partners_cta');
+$homepage_apply_title = get_field('homepage_apply_title');
+$homepage_apply_text = get_field('homepage_apply_text');
+$homepage_apply_cta = get_field('homepage_apply_cta');
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -16,21 +27,21 @@
 			the_content();
 		?>
 		<div class="banner-home">
-	        <h1>Unleash the Power of Your Network</h1>
-	        <h2>THE NIELSEN CONNECTED PARTNER PROGRAM</h2>
-	        <p>There's power in partnering up. With Nielsen's Connected Partner Program you can easily connect your network. Now, you can shift from managing and analyzing data to making smarter, faster decisions. Because when the data and analytics get smarter, everyone wins.</p>
-	        <a href="#" class="cpp-btn">FIND A PARTNER &gt;</a>
+	        <h1><?php echo $homepage_banner_title; ?></h1>
+	        <h2><?php echo $homepage_banner_subtitle; ?></h2>
+	        <p><?php echo $homepage_banner_text; ?></p>
+	        <a href="#" class="cpp-btn"><?php echo $homepage_banner_cta; ?> &gt;</a>
 	      </div>
 	      <div class="featured-partners-home">
-	        <h3>Featured Partners</h3>
-	        <p>Helping you make smarter decisions and take faster actions</p>
+	        <h3><?php echo $homepage_featured_partners_title; ?></h3>
+	        <p><?php echo $homepage_featured_partners_text; ?></p>
 	        <ul class="clearfix">
 	          <li><a href="#"><img src="wp-content/themes/nielsen-cpp/images/logo-eversight.jpg"></a></li>
 	          <li><a href="#"><img src="wp-content/themes/nielsen-cpp/images/logo-prevedere.jpg"></a></li>
 	          <li><a href="#"><img src="wp-content/themes/nielsen-cpp/images/logo-mobify.jpg"></a></li>
 	          <li><a href="#"><img src="wp-content/themes/nielsen-cpp/images/logo-market-track.jpg"></a></li>
 	        </ul>
-	        <a href="#" class="cpp-btn">Explore All Partners &gt;</a>
+	        <a href="#" class="cpp-btn"><?php echo $homepage_featured_partners_cta; ?> &gt;</a>
 	      </div>
 	      <div class="apply-now-home">
 	        <div class="apply-now-home-inner clearfix">
@@ -38,11 +49,11 @@
 	            <img src="wp-content/themes/nielsen-cpp/images/nielsen-connected-partner.png">
 	          </div>
 	          <div class="connected-partner-text">
-	            <h3>Interested in Becoming a Member?</h3>
-	            <p>You'll gain access to data and resources that will make you even more valuable to your clients.</p>
+	            <h3><?php echo $homepage_apply_title; ?></h3>
+	            <p><?php echo $homepage_apply_text; ?></p>
 	          </div>
 	          <div class="connected-partner-apply">
-	            <a href="#" class="cpp-btn-sm">Apply Now &gt;</a>
+	            <a href="#" class="cpp-btn-sm"><?php echo $homepage_apply_cta; ?> &gt;</a>
 	          </div>
 	        </div>
 	      </div>
