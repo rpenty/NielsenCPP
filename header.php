@@ -57,14 +57,14 @@
             			<span class="icon-bar"></span>
             			<span class="icon-bar"></span>
           			</button>
-          			<img src="wp-content/themes/nielsen-cpp/images/nielsen-logo.gif" class="nielsen-logo">
-          			<a class="navbar-brand" href="#">Nielsen Connected Partner Program</a>
+          			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nielsen-logo.gif" class="nielsen-logo"></a>
+          			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span>Nielsen</span> Connected Partner Program</a>
         		</div>
         		<div id="navbar" class="navbar-collapse collapse">
           			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nielsen-cpp' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
           			<ul class="nav navbar-nav navbar-right">
-            			<li><a href="#"><img src="wp-content/themes/nielsen-cpp/images/hamburger.gif"></a></li>
+            			<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hamburger.gif"></a></li>
           			</ul>
         		</div><!--/.nav-collapse -->
       		</div>

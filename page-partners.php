@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Partners Overview Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'home' );
+				get_template_part( 'template-parts/content', 'partners' );
 
 			endwhile; // End of the loop.
 			?>
