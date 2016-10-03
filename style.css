@@ -751,6 +751,7 @@ a:active {
 --------------------------------------------------------------*/
 .navbar {height: 80px;}
 .navbar-brand { height: 80px; padding: 30px 15px; text-transform: uppercase; }
+.navbar-brand span { color: #2a96c6; }
 .navbar >.container-fluid .navbar-brand { margin-left: 0px; }
 .navbar-default { background-color: #fff; }
 .nielsen-logo { float: left; margin-left: 55px; }
@@ -758,22 +759,26 @@ a:active {
 
 .menu-main-container ul { margin: 0; padding: 0; list-style: none; }
 .menu-main-container ul li { float: left; margin: 30px 20px 0 0;}
-.menu-main-container ul li a { font-size: 15px; line-height: 18px; text-transform: uppercase; color: #777; }
+.menu-main-container ul li:first-child { margin-left: 75px; }
+.menu-main-container ul li a { font-size: 15px; line-height: 18px; text-transform: uppercase; color: #777; text-decoration: none; }
 
 .no-gutter { padding-left: 0 !important; padding-right: 0 !important;}
-
-/* Home */
-.banner-home { background: url(images/homepage-bg.jpg) 0 0 no-repeat; background-size: 100% auto; width: 100%; height: 575px; padding: 100px 0 0 400px; }
-.banner-home p { color: white; font-size: 19px; }
 
 h1 { padding: 0; margin: 0; color: #fff !important; font-size: 60px; text-transform: uppercase;; }
 h2 { padding: 0; margin: 0; color: #2a96c6; font-size: 29px; }
 h3 { padding: 0; margin: 0; color: #2a96c6; font-size: 20px; text-transform: uppercase; }
 
-a.cpp-btn { width: 530px; color: white; background-color: #2a96c6; padding: 10px 0; font-size: 22px; text-align: center; text-transform: uppercase; display: block; }
-a.cpp-btn-sm { width: 245px; color: white; background-color: #2a96c6; padding: 10px 0; font-size: 22px; text-align: center; text-transform: uppercase; display: block; }
+a.cpp-btn { width: 530px; color: white; background-color: #2a96c6; padding: 10px 0; font-size: 22px; text-align: center; text-transform: uppercase; display: block; text-decoration: none; }
+a.cpp-btn-sm { width: 245px; color: white; background-color: #2a96c6; padding: 10px 0; font-size: 22px; text-align: center; text-transform: uppercase; display: block; text-decoration: none; }
 
 p { font-family: Arial; font-size: 19px; color: #6a6a6a; padding: 0; margin: 0; }
+
+/* Home */
+.banner-home { background: url(images/homepage-bg.jpg) 0 0 no-repeat; background-size: 100% auto; width: 100%; height: 600px; }
+.banner-home .banner-home-inner,
+.banner-partners .banner-partners-inner { width: 1100px; margin: 0 auto; padding-top: 100px; }
+.banner-home .banner-home-inner p { color: white; font-size: 19px; margin: 60px 0 80px 0; }
+.banner-home .banner-home-inner .cpp-btn { margin: 0 auto; }
 
 .featured-partners-home { width: 1100px; margin: 0 auto; }
 .featured-partners-home h3 { margin-top: 60px; }
@@ -783,8 +788,9 @@ p { font-family: Arial; font-size: 19px; color: #6a6a6a; padding: 0; margin: 0; 
 .featured-partners-home ul li:last-child { border-right: none; }
 .featured-partners-home .cpp-btn { margin: 60px auto 45px; }
 
-.apply-now-home { background-color: #f4f4f4; }
-.apply-now-home-inner { width: 1100px; margin: 0 auto; padding: 55px 0 70px; }
+.apply-now-section { background-color: #f4f4f4; }
+.apply-now-section-inner { width: 1100px; margin: 0 auto; padding: 55px 0 70px; }
+
 .connected-partner-logo { width: 244px; float: left; text-align: center; }
 .connected-partner-text { width: 615px; padding: 0 40px; float: left; }
 .connected-partner-apply { width: 241px; float: left; margin: 40px 0 0 0; }
@@ -792,6 +798,14 @@ p { font-family: Arial; font-size: 19px; color: #6a6a6a; padding: 0; margin: 0; 
 .news-home { width: 1100px; margin: 30px auto; }
 .news-home-title { width: 244px; float: left; }
 .news-home-text { width: 856px; float: left; padding: 0 40px; }
+
+/* Partners */
+.banner-partners { background: url(images/homepage-bg.jpg) 0 0 no-repeat; background-size: 100% auto; width: 100%; height: 320px; }
+
+.partners, .apply { width: 1100px; margin: 50px auto 0; }
+
+/* Apply */
+
 
 /* Footer */
 footer { background-color: #373b44; color: #fff; font-size: 15px; }
