@@ -13,13 +13,12 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nielsen-cpp' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'nielsen-cpp' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'nielsen-cpp' ), 'nielsen-cpp', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer>
+      <div class="footer-inner">
+        <a href="#">Feedback</a> | <a href="#">Terms of Service</a> | <a href="#">Privacy</a> | <a href="#">Contact Us</a> | <a href="#">FAQ</a><br>
+        <span>Copyright &copy;2016 The Nielsen Company. All Rights Reserved</span>
+      </div>
+    </footer><!-- /footer -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
